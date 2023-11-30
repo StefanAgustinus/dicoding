@@ -17,4 +17,4 @@ See online dashboard web below
 
 [**Dicoding Collection Dashboard**](https://dicoding-sslxp48quqxjvzyehzmbts.streamlit.app/)
 
-![image](dashboard_ss.PNG)
+![image](dashboard_ss.png)
