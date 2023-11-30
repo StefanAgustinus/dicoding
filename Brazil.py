@@ -1,11 +1,9 @@
-pip install streamlit babel
+pip install streamlit
 
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-from babel.numbers import format_currency
-sns.set(style='dark')
 
 product_df = pd.read_csv('products_dataset.csv')
 order_item_df = pd.read_csv("order_items_dataset.csv")
