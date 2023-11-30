@@ -45,6 +45,7 @@ ax[1].yaxis.set_label_position("left")
 ax[1].yaxis.tick_left()
 ax[1].set_title("Worst Performing Product", loc="center", fontsize=15)
 ax[1].tick_params(axis='y', labelsize=12)
+st.pyplot(fig)
 
 
 
@@ -54,3 +55,4 @@ explode = (0.05, 0.05, 0.05, 0.05, 0.05)
 
 where3.groupby(['payment_type']).sum().plot(
     kind='pie', y='total', autopct='%1.2f%%', explode=explode, title = 'Payments Method in Brazilian E-Commerce', legend = False)
+plt.show()
