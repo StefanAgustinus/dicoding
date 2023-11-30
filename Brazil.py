@@ -51,10 +51,9 @@ st.pyplot(fig)
 
 st.subheader("Jenis - Jenis Metode Pembayaran yang Digunakan di E-Commerce Brazil")
 
-where3 = plt.subplots()
-
 explode = (0.05, 0.05, 0.05, 0.05, 0.05)
 
-where3.groupby(['payment_type']).sum().plot(
+ax = where3.groupby(['payment_type']).sum().plot(
     kind='pie', y='total', autopct='%1.2f%%', explode=explode, title = 'Payments Method in Brazilian E-Commerce', legend = False)
-st.pyplot(where3)
+fig_pie = ax.get_figure()
+st.pyplot(fig_pie)
